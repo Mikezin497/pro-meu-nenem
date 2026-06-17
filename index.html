@@ -1,165 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Me Perdoa Por Favor</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para meu 🐧💙</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+        body {
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #a0d8ff, #e0f7ff);
+            font-family: 'Comic Neue', cursive;
+            text-align: center;
+            color: #333;
+        }
 
-    body {
-      margin: 0;
-      height: 100vh;
-      background: linear-gradient(135deg, #ffe6f0, #f0e6ff);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Playfair Display', serif;
-      overflow: hidden;
-    }
+        h1 {
+            font-size: 2.8rem;
+            color: #4a9fff;
+            margin: 20px 0 10px 0;
+        }
 
-    /* Envelope */
-    .envelope {
-      width: 340px;
-      height: 240px;
-      position: relative;
-      background: #ff4d94;
-      cursor: pointer;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-      perspective: 1200px;
-    }
+        .penguin {
+            font-size: 4rem;
+            margin: 10px;
+        }
 
-    /* Aba do envelope */
-    .flap {
-      position: absolute;
-      width: 100%;
-      height: 120px;
-      background: #ff3385;
-      clip-path: polygon(50% 100%, 0 0, 100% 0);
+        .message {
+            background: white;
+            padding: 30px;
+            border-radius: 25px;
+            margin: 25px auto;
+            max-width: 650px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            font-size: 1.35rem;
+            line-height: 1.6;
+        }
 
-      transform-origin: top;
-      transition: transform 0.8s ease;
-      z-index: 3;
-
-      backface-visibility: hidden; /* evita bug visual */
-    }
-
-    /* Quando abre */
-    .envelope.open .flap {
-      transform: rotateX(-180deg);
-      z-index: 0; /* manda pra trás */
-    }
-
-    /* Carta */
-    .letter {
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      transform: translateX(-50%) translateY(100%) scale(0.9);
-
-      width: 300px;
-      max-height: 420px;
-      background: #fffaf0;
-      border-radius: 12px;
-      padding: 25px;
-
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-      opacity: 0;
-      transition: all 0.8s ease;
-
-      overflow-y: auto;
-      z-index: 2;
-    }
-
-    /* Carta sobe */
-    .envelope.open .letter {
-      transform: translateX(-50%) translateY(-30px) scale(1);
-      opacity: 1;
-    }
-
-    h1 {
-      font-family: 'Dancing Script', cursive;
-      text-align: center;
-      color: #ff3385;
-      margin-bottom: 15px;
-      font-size: 28px;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 1.6;
-      margin-bottom: 12px;
-    }
-
-    .signature {
-      font-family: 'Dancing Script', cursive;
-      text-align: right;
-      font-size: 22px;
-      margin-top: 20px;
-      color: #ff4d94;
-    }
-
-    /* Corações */
-    .heart {
-      position: absolute;
-      font-size: 30px;
-      animation: subir 4s linear forwards;
-      pointer-events: none;
-    }
-
-    @keyframes subir {
-      from {
-        transform: translateY(0);
-        opacity: 1;
-      }
-      to {
-        transform: translateY(-300px);
-        opacity: 0;
-      }
-    }
-
-  </style>
+        .gallery {
+            margin: 30px 0;
+            font-size: 4rem;
+        }
+    </style>
 </head>
 <body>
+    <div class="penguin">🐧</div>
+    <h1>Para meu amorzinho</h1>
+    <p style="font-size:1.4rem; color:#555;">o amorzinho da minha vida</p>
 
-  <div class="envelope" id="envelope">
-    <div class="flap"></div>
-
-    <div class="letter">
-      <h1>Davi...</h1>
-      <p>Eu sei que menti pra você e para mim mesmo..</p>
-      <p>Meu objetivo como seu namorado sempre foi te dar a melhor sensação, mas eu menti e depois continuei como se nada fosse vir à tona.</p>
-      <p>Você é a pessoa mais importante da minha vida. Sua voz salva meus dias e eu não quero nunca mais te ver triste por minha causa.</p>
-      <p>Me perdoa, por favor? Eu prometo fazer de tudo para você voltar a confiar em mim e consertar isso.</p>
-      <p>Eu só quero você, passar a vida toda ao seu lado...</p>
-
-      <div class="signature">
-        Te amo mais que tudo,<br> Amor da sua vida, <br> Pedro ❤️
-      </div>
+    <div class="message">
+        <p>Amor,</p>
+        <p>mim diculpa por ter ficado sem responder 2 minutos... eu só fui fazer pipi rapidinho ;c</p>
+        <p>eu sei que você é bem sensível e eu gosto disso, mas me perdoa? eu não queria te deixar chateado, eu te amom muito poxa :C</p>
+        <p>você é o meu pinguinzinho, minha criancinha, MEU garotino. eu te amo muito poxa;c</p>
+        <p>desculpa por não ser suficiente pra você e só ficar te magoando o tempo todo... eu so queria prestar pra vc, e ser o garoto dos seus sonhos ;(</p>
+        <p></p>
     </div>
-  </div>
 
-  <script>
-    const envelope = document.getElementById('envelope');
+    <div class="gallery">
+        🐧 &nbsp; 🐧 &nbsp; 💙 &nbsp; 🧊
+    </div>
 
-    envelope.addEventListener('click', () => {
-      envelope.classList.toggle('open');
-
-      for (let i = 0; i < 10; i++) {
-        const heart = document.createElement('div');
-        heart.className = 'heart';
-        heart.innerText = ['❤️','💖','💕'][Math.floor(Math.random()*3)];
-
-        heart.style.left = Math.random() * 100 + 'vw';
-        heart.style.bottom = '0';
-
-        document.body.appendChild(heart);
-
-        setTimeout(() => heart.remove(), 4000);
-      }
-    });
-  </script>
-
+    <p style="margin-top:40px; color:#555;">feito com carinho pro meu amorziho ;<</p>
 </body>
 </html>
